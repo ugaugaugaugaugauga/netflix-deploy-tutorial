@@ -30,8 +30,6 @@ Thumbs.db
 # Dependencies
 /.pnp/
 .pnp.js
-# Prisma
-/prisma/client/
 
 # Example SQLite database
 /db.sqlite
