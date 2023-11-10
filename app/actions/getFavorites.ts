@@ -1,5 +1,5 @@
 import prismadb from '@/app/libs/prismadb';
-import { Movie, User } from '@prisma/client';
+import { Movie } from '@prisma/client';
 import getCurrentUser from './getCurrentUser';
 
 export default async function getFavorites(): Promise<Movie[] | null> {

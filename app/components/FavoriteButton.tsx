@@ -20,7 +20,7 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({
     return list.includes(movieId)
   }, [currentUser, movieId])
 
-  const router = useRouter()
+  // const router = useRouter()
   const toggleFavorites = useCallback(async () => {
     if (isFavorite) {
       await axios.delete('/api/favorites', { data: { movieId } })
@@ -28,8 +28,8 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({
       await axios.post('/api/favorites', { movieId })
     }
 
-    router.refresh()
-  }, [isFavorite, movieId, router]);
+    // router.refresh()
+  }, [isFavorite, movieId]);
 
   const Icon = isFavorite ? AiOutlineCheck : AiOutlinePlus
 
