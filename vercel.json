@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "out",
+      "use": "@vercel/node",
+      "config": {
+        "prisma": {
+          "generate": "prisma generate"
+        }
+      }
+    }
+  ]
+}
