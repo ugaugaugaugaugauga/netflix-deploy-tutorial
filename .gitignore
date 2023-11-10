@@ -1,39 +1,36 @@
-# Node.js
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Next.js
-/.next/
-
-# TypeScript
-*.tsbuildinfo
-*.tscode
-
-# Visual Studio Code
-.vscode/
-
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-
-# Tailwind CSS
-/tailwind.config.js
-/dist/
-
-# Log files
-*.log
-
-# Build files
-/build/
-
-# Dependencies
-/.pnp/
+# dependencies
+/node_modules
+/.pnp
 .pnp.js
+.yarn/install-state.gz
 
-# Example SQLite database
-/db.sqlite
+# testing
+/coverage
 
-# Ignore auto-generated Prisma files
-*.prisma
-.env
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
